@@ -1,4 +1,4 @@
-Versão 0.1
+Documentação Versão 0.2
 
 Primeiro passo é criar um repositório no GITHUB
 
