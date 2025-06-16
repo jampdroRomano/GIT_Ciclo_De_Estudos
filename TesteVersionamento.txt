@@ -68,3 +68,37 @@ git push --set-upstream origin master
 
 // Envia os commits para o repositório remoto e define o branch master como padrão.
 
+git status
+
+//Verifica se os arquivos locais foram alterados 
+
+git reflog
+
+//verifica o histórico commits, até mesmo em commits descartados, resets e checkouts.
+
+git reset --hard <id-do-commit>
+
+//reseta o commit definitivamente para um commit informado (Desfazendo o que veio depois) de forma local
+
+git reset --soft <id-do-commit>
+
+//Volta pro commit anterior, mas mantém as mudanças nos arquivos e no staging. Ideal pra refazer commits.
+
+git push --force origin master
+
+// força o envio da sua branch master local para o repositório remoto no GitHub substituindo qualquer alteração que tenha sido feita no GitHub depois do ultimo commit. (Sobrescreve o histórico REMOTO)
+
+git log
+
+//Mostra os commits do histórico oficial da sua branch, reflete apenas o que foi confirmado no projeto
+
+git checkout <id-do-commit>
+
+//Agora você está temporariamente vendo o projeto como era naquele commit.
+
+git checkout master
+
+//Pra voltar pro seu branch
+
+
+
