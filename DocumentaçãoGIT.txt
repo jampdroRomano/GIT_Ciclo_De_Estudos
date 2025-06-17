@@ -68,6 +68,11 @@ git push --set-upstream origin master
 
 // Envia os commits para o repositório remoto e define o branch master como padrão.
 
+
+====================
+Comandos importantes 
+====================
+
 git status
 
 //Verifica se os arquivos locais foram alterados 
@@ -99,6 +104,14 @@ git checkout <id-do-commit>
 git checkout master
 
 //Pra voltar pro seu branch
+
+git merge [nome branch]
+
+//uni informações entre branch conforme a branch que está e a que deseja unir
+
+git pull 
+
+//Atualiza os arquivos locais conforme a ultima versão da sua branch no repositório remoto 
 
 
 
