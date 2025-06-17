@@ -39,6 +39,14 @@ git branch
 // Verifique o nome do branch atual: se aparecer um asterisco do lado de master, está tudo certo.
 // Se não for master, renomeie o branch atual para master:
 
+git branch [Nome da branch]
+
+//cria uma nova branch
+
+git checkout [Nome da branch]
+
+//Muda a branch na qual está realizando commits 
+
 git branch -m master
 
 // Configurar o GitHub para usar esse branch (no repositório remoto):
@@ -99,6 +107,8 @@ git checkout <id-do-commit>
 git checkout master
 
 //Pra voltar pro seu branch
+
+
 
 
 
