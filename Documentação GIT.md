@@ -1,11 +1,8 @@
-# Documentação GIT
+## Documentação GIT
 
 Este documento serve como um guia rápido para os conceitos e comandos essenciais do Git e GitHub, desde a criação de um repositório até a realização de commits e a manipulação do histórico.
 
 ---
-
-
-
 
 ## Primeiro passo: Criar um repositório no GitHub
 
@@ -14,9 +11,6 @@ Este documento serve como um guia rápido para os conceitos e comandos essenciai
 Um repositório é onde ficam os arquivos e o histórico de um projeto. Pode ser local (no seu computador) ou remoto (como no GitHub). Ele guarda tudo que é feito no projeto: códigos, alterações, versões e histórico.
 
 ---
-
-
-
 
 ## Trajeto até realizar um commit
 
@@ -27,8 +21,8 @@ Um repositório é onde ficam os arquivos e o histórico de um projeto. Pode ser
     cd "C:\Users\Desktop\GITHUB\ProjetoGIT"
     ```
 
-    *   `mkdir`: Cria uma pasta no caminho especificado.
-    *   `cd`: Entra na pasta no caminho especificado.
+    - `mkdir`: Cria uma pasta no caminho especificado.
+    - `cd`: Entra na pasta no caminho especificado.
 
 2.  **Criar um novo arquivo (exemplo):**
 
@@ -36,7 +30,7 @@ Um repositório é onde ficam os arquivos e o histórico de um projeto. Pode ser
     New-Item "TesteVersionamento.txt"
     ```
 
-    *   `New-Item`: Cria um novo arquivo.
+    - `New-Item`: Cria um novo arquivo.
 
 3.  **Inicializar um repositório Git local:**
 
@@ -44,7 +38,7 @@ Um repositório é onde ficam os arquivos e o histórico de um projeto. Pode ser
     git init
     ```
 
-    *   Isso cria a pasta `.git` e transforma o diretório em um repositório Git local.
+    - Isso cria a pasta `.git` e transforma o diretório em um repositório Git local.
 
 ### O que é uma branch?
 
@@ -52,18 +46,18 @@ Uma branch é um caminho separado de desenvolvimento. Serve para testar novas id
 
 4.  **(Opcional) Renomear a branch principal para `master` (se ela veio como `main`):**
 
-    *   Verifique o nome da branch atual:
+    - Verifique o nome da branch atual:
+
+      ```bash
+      git branch
+      ```
+
+      - Se aparecer um asterisco ao lado de `master`, está tudo certo.
+      - Se não for `master`, renomeie a branch atual para `master`:
 
         ```bash
-        git branch
+        git branch -m master
         ```
-
-        *   Se aparecer um asterisco ao lado de `master`, está tudo certo.
-        *   Se não for `master`, renomeie a branch atual para `master`:
-
-            ```bash
-            git branch -m master
-            ```
 
 5.  **Criar uma nova branch:**
 
@@ -77,7 +71,7 @@ Uma branch é um caminho separado de desenvolvimento. Serve para testar novas id
     git checkout [Nome da branch]
     ```
 
-    *   Muda a branch na qual está realizando commits.
+    - Muda a branch na qual está realizando commits.
 
 7.  **Configurar o GitHub para usar esse branch (no repositório remoto):**
 
@@ -85,7 +79,7 @@ Uma branch é um caminho separado de desenvolvimento. Serve para testar novas id
     git remote add origin https://github.com/seunome/nomedorepo.git
     ```
 
-    *   Esse comando vincula seu projeto local com o repositório remoto chamado `origin` (padrão) no GitHub.
+    - Esse comando vincula seu projeto local com o repositório remoto chamado `origin` (padrão) no GitHub.
 
 8.  **Testar o vínculo do projeto local com o repositório remoto:**
 
@@ -119,9 +113,6 @@ Uma branch é um caminho separado de desenvolvimento. Serve para testar novas id
     ```
 
 ---
-
-
-
 
 ## Comandos importantes
 
@@ -166,6 +157,3 @@ Une informações entre branches, conforme a branch em que você está e a que d
 Atualiza os arquivos locais conforme a última versão da sua branch no repositório remoto.
 
 ---
-
-
-
